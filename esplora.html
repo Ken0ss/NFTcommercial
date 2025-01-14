@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Categorie di NFT - NFT Commercial">
+    <title>Categorie NFT - NFT Commercial</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+        .card {
+            max-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .categories-container {
+            gap: 15px;
+        }
+        header nav a {
+            border-radius: 20px; 
+            text-decoration: none; 
+            transition: all 0.3s ease; 
+        }
+        header nav a:hover {
+            background-color: #3498db; 
+            color: #fff; 
+            transform: scale(1.1); 
+        }
+        header nav a:active {
+            transform: scale(1); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+        .hero {
+            background: linear-gradient(to right, #3498db, #8e44ad);
+            color: white;
+            padding: 50px 0; 
+        }
+        .hero h1 {
+            font-size: 3rem; 
+        }
+        .hero p {
+            font-size: 1.25rem; 
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="IMG/Logo PNG.png" alt="Logo NFT Commercial" style="max-width: 50px; margin-right: 10px;">
+            <h1 class="h4 m-0">NFT Commercial</h1>
+        </div>
+        <nav class="d-flex gap-2">
+            <a href="index.html" class="btn btn-outline-light btn-sm px-3">Home</a>
+            <a href="marketplace.html" class="btn btn-outline-light btn-sm px-3">Marketplace</a>
+            <a href="chi-siamo.html" class="btn btn-outline-light btn-sm px-3">Chi siamo</a>
+            <a href="missione.html" class="btn btn-outline-light btn-sm px-3">Missione</a>
+            <a href="contatti.html" class="btn btn-outline-light btn-sm px-3">Contatti</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="display-4">Categorie di NFT</h1>
+        <p class="lead mt-3">Esplora le nostre categorie di NFT e trova quella che fa per te!</p>
+    </div>
+</section>
+
+<div class="container py-5">
+    <div class="row g-3 categories-container justify-content-center">
+
+        <!-- ARTE -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/arte.jpg" class="card-img-top" alt="Arte NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Arte</h5>
+                    <p class="card-text">Scopri NFT artistici creati da talenti di tutto il mondo.</p>
+                    <!-- LINK con parametro ?category=Arte -->
+                    <a href="marketplace.html?category=Arte" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSICA -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/musica.jpg" class="card-img-top" alt="Musica NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Musica</h5>
+                    <p class="card-text">Colleziona NFT unici dei tuoi artisti preferiti.</p>
+                    <a href="marketplace.html?category=Musica" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAMING -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/gaming.jpg" class="card-img-top" alt="Gaming NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Gaming</h5>
+                    <p class="card-text">Acquista oggetti esclusivi per i tuoi giochi preferiti.</p>
+                    <a href="marketplace.html?category=Gaming" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PFP -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/pfp.jpg" class="card-img-top" alt="PFP NFT">
+                <div class="card-body">
+                    <h5 class="card-title">PFP</h5>
+                    <p class="card-text">Trova il tuo avatar unico per i social o il metaverso.</p>
+                    <a href="marketplace.html?category=PFP" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOTOGRAFIA -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/fotografia.jpg" class="card-img-top" alt="Fotografia NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Fotografia</h5>
+                    <p class="card-text">Foto uniche e opere fotografiche in digitale.</p>
+                    <a href="marketplace.html?category=Fotografia" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLLEZIONABILI -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/collezionabili.jpg" class="card-img-top" alt="Collezionabili NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Collezionabili</h5>
+                    <p class="card-text">Colleziona oggetti da collezione digitali esclusivi.</p>
+                    <a href="marketplace.html?category=Collezionabili" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- METAVERSO -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/metaverso.jpg" class="card-img-top" alt="Metaverso NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Metaverso</h5>
+                    <p class="card-text">Esplora e colleziona oggetti virtuali per il metaverso.</p>
+                    <a href="marketplace.html?category=Metaverso" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPORT -->
+        <div class="col-auto">
+            <div class="card text-center shadow-sm">
+                <img src="IMG/sport.jpg" class="card-img-top" alt="Sport NFT">
+                <div class="card-body">
+                    <h5 class="card-title">Sport</h5>
+                    <p class="card-text">Acquista NFT legati al mondo dello sport e dei suoi atleti.</p>
+                    <a href="marketplace.html?category=Sport" class="btn btn-dark btn-sm">Vai allo Shop</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p class="mb-0">© 2024 NFT Commercial. Tutti i diritti riservati.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
